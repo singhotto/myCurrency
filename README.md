@@ -1,6 +1,6 @@
 # myCurrency
 android app for current exchange rates
-![WhatsApp Image 2023-09-13 at 21 48 06](https://github.com/SexySingh8/myCurrency/assets/106439577/d11b79fa-9efa-4296-bac3-02d7a305bef3)
+<img src="https://private-user-images.githubusercontent.com/106439577/267772972-d11b79fa-9efa-4296-bac3-02d7a305bef3.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE2OTQ2MzUxMTksIm5iZiI6MTY5NDYzNDgxOSwicGF0aCI6Ii8xMDY0Mzk1NzcvMjY3NzcyOTcyLWQxMWI3OWZhLTllZmEtNDI5Ni1iYWMzLTAyZDdhMzA1YmVmMy5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDkxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA5MTNUMTk1MzM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NmZlNjFkZWQ2MWI5NzNmOWI0YTE0M2Y0MmQxNTlkMWY1YTVhMzg0ZWNkYjdlODFkM2NmZTUxZTdmM2M0M2Q2NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.yBygRneFozXuupOOhqZ_QjZnOVsPzjJrDQ9mIXblxeM" alt="WhatsApp Image 2023-09-13 at 21 48 06" width="200" height="400">
 ![WhatsApp Image 2023-09-13 at 21 48 05 (2)](https://github.com/SexySingh8/myCurrency/assets/106439577/2b99f691-d47a-42fb-9be7-49f67129a2f9)
 ![WhatsApp Image 2023-09-13 at 21 48 05 (1)](https://github.com/SexySingh8/myCurrency/assets/106439577/ae14a00d-375c-4e0b-8394-a8a341e124dd)
 ![WhatsApp Image 2023-09-13 at 21 48 05](https://github.com/SexySingh8/myCurrency/assets/106439577/6f2d3c6b-68cf-4f31-86d6-8079f95c9083)
