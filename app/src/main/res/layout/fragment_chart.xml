@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/keypad_ops"
+    tools:context=".ChartFragment">
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/currency_select_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="4dp"
+            android:background="@drawable/boderd_layout_chart">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/currency_selectText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+                <ImageView
+                    android:id="@+id/select_image1"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/inr"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/currency_select_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="4dp"
+            android:background="@drawable/boderd_layout_chart">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/currency_selectText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+                <ImageView
+                    android:id="@+id/select_image2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/inr"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_layout"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/day7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="7"
+            android:textColor="@color/white"
+            app:strokeColor="@color/select_btn"
+            app:strokeWidth="2dp"
+            android:textSize="30sp"
+            app:backgroundTint="@color/keypad_ops"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/day10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="0.2dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="10"
+            android:textColor="@color/white"
+            app:strokeColor="@color/select_btn"
+            app:strokeWidth="2dp"
+            android:textSize="30sp"
+            app:backgroundTint="@color/keypad_ops"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/day15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="0.2dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="15"
+            android:textColor="@color/white"
+            app:strokeColor="@color/select_btn"
+            app:strokeWidth="2dp"
+            android:textSize="30sp"
+            app:backgroundTint="@color/keypad_ops"
+            app:cornerRadius="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/day30"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="0.2dp"
+            android:layout_weight="1"
+            android:padding="14dp"
+            android:text="30"
+            android:textColor="@color/white"
+            app:strokeColor="@color/select_btn"
+            app:strokeWidth="2dp"
+            android:textSize="30sp"
+            app:backgroundTint="@color/keypad_ops"
+            app:cornerRadius="12dp"
+        />
+
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/select_time_layout"
+        android:layout_height="400dp"/>
+
+</RelativeLayout>

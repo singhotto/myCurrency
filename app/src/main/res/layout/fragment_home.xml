@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_below="@id/toolbar"
+    android:layout_width="match_parent"
+    android:id="@+id/home_currency"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/homeCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/keypadLayout"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="2"
+        android:background="#44739F"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="IT"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/calculationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="6dp" />
+
+        <!-- First Currency -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/firstCurrencyLayout"
+                android:layout_width="212dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/firstTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="USA"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/firstSubTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="american dollarfdf"
+                        android:textColor="@color/subtitle_main" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/firstCurrencyImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/inr" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstCurrencyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="12dp" />
+
+        <!-- Second Currency -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/secondCurrencyLayout"
+                android:layout_width="212dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/secondTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="USA"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/secondSubTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="american dollar"
+                        android:textColor="@color/subtitle_main" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/secondCurrencyImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/inr" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:gravity="end|center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/secondCurrencyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Keypad Layout -->
+    <LinearLayout
+        android:id="@+id/keypadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:background="@color/keypad_special">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/preferenceBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_special"
+                android:text="VALUTA PREFERITA"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:icon="@android:drawable/btn_star" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/swapBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_special"
+                android:padding="8dp"
+                android:text="RUOTA VALUTA"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                app:icon="@android:drawable/stat_notify_sync" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/copyBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="COPIA"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sendBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="INVIA"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/clearBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="CLR"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="DEL"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sevenBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad"
+                android:text="7"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/eightBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="8"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nineBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="9"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/divideBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="/"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fourBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad"
+                android:text="4"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fiveBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="5"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sixBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="6"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/multiplyBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="*"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/oneBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad"
+                android:text="1"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/twoBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="2"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/threeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="3"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/minusBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="-"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/zero3Btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad"
+                android:text="000"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/zero2Btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="00"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/zeroBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad"
+                android:text="0"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plusBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:text="+"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plusMinusBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                app:cornerRadius="0dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:padding="8dp"
+                android:text="±"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dotBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad_ops"
+                android:padding="8dp"
+                android:text="."
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/equalBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                app:cornerRadius="0dp"
+                android:layout_marginLeft="0.2dp"
+                app:backgroundTint="@color/keypad_equal"
+                android:padding="8dp"
+                android:text="="
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
